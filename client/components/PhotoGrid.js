@@ -5,12 +5,13 @@ import Photo from './Photo'
 class PhotoGrid extends Component {
 	render() {
 		return (
-			<div className="photo-grid">
+			<div className="container card-columns">
 				{this.props.posts.map( (post, i) => 
 					<Photo key={i}
 							i={i}
 							post={post}
 							{...this.props}
+							grid={true}
 					/>
 				)}
 			</div>
@@ -20,6 +21,11 @@ class PhotoGrid extends Component {
 
 export default PhotoGrid;
 
+
+
+			// <div className="photo-grid">
+			
+			// </div>
 
 // import React from 'react'
 // import { Link } from 'react-router'

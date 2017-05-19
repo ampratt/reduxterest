@@ -11,7 +11,7 @@ import store, { reduxHistory } from  './store/store'
 import css from './css/style.styl'
 import Routes from './routes'
 
-Raven.config(sentry_url).install()
+// Raven.config(sentry_url).install()
 // Raven.config(sentry_url, {
 // 	tags: {
 // 		git_commit: 'asdsdhldfg',

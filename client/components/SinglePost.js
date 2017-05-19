@@ -16,7 +16,8 @@ class SinglePost extends Component {
 			<div className="single-photo">
 				<Photo i={i} 
 						post={post}
-						{...this.props} />
+						{...this.props}
+						grid={false} />
 				<Comments postComments={postComments} {...this.props}/>
 			</div>
 		)		
