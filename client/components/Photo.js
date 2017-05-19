@@ -3,11 +3,6 @@ import { Link } from 'react-router'
 import CSSTransitionGroup from 'react-addons-css-transition-group'
 
 
-const buttonWidth = {
-	width: '10%'
-}
-
-
 class Photo extends Component {
 	render() {
 		const { post, i, comments } = this.props
@@ -30,8 +25,8 @@ class Photo extends Component {
 
 			    <div className="card-block">
     			    {(this.props.grid) 
-				    	? <p class="card-text">{post.caption}</p> 
-				    	: <h4 className="card-subtitle">{post.caption}</h4>}
+				    	? <p className="card-text">{post.caption}</p> 
+				    	: <h4 className="card-subtitle button-group">{post.caption}</h4>}
 
 					  <div className="row">
 					    <div className="col">

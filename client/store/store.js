@@ -6,7 +6,8 @@ import rootReducer from './reducers/rootReducer'
 
 // data
 import comments from '../data/comments'
-import posts from '../data/posts'
+import posts from '../data/posts2'
+// import posts from '../data/fakePosts'
 
 // object for default data
 const defaultState = {
